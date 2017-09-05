@@ -1,0 +1,44 @@
+//
+//  PrefixHeader.pch
+//  messageManager
+//
+//  Created by desunire on 2017/8/28.
+//  Copyright © 2017年 desunire. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "AFNetWorking.h"
+#import "httpRequest.h"
+#import "SVProgressHUD.h"
+#import "MJExtension.h"
+#import "MessageObject.h"
+#import "ViewController.h"
+#import "JPUSHService.h"
+#import "SCJDropDownMultiSelectMenu.h"
+#import "YCJHttpRequest.h"
+#import "NSString+TimeFormat.h"
+#import "SCJToolManager.h"
+#import "ProcessitemTableViewCell.h"
+#define navColor [UIColor colorWithRed:0.1803 green:0.2509 blue:0.6117 alpha:1]
+
+//#define navColor [UIColor colorWithRed:0.1803 green:0.2509 blue:0.6117 alpha:0]
+
+#define serverUrl @"http://192.168.1.139:8089"
+#define UIColorFromRGBA(rgbValue, alphaValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0x00FF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0x0000FF))/255.0 \
+alpha:alphaValue]
+#define UIColorFromRGB(rgbValue) UIColorFromRGBA(rgbValue, 1.0)
+
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREENH_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define SCREEN_SIZE [UIScreen mainScreen].bounds.size
+
+#endif /* PrefixHeader_pch */

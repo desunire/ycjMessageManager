@@ -1,0 +1,8 @@
+platform :ios, '8.0'
+target "messageManager" do
+pod 'MJRefresh', '~> 3.1.12'
+pod 'AFNetworking', '~> 3.1.0'
+pod 'SVProgressHUD', '~> 2.1.2'
+pod 'MJExtension', '~> 3.0.13'
+pod 'JPush', '~> 3.0.5'
+end
